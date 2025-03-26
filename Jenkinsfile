@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             image 'node:20.19-alpine3.20'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
     stages {
